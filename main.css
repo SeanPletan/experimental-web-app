@@ -1,0 +1,92 @@
+:root {
+    --aliceblue: #c8e6fc;
+    --white: #FFFFFF;
+    --black: #000000;
+    --deepocean: #00003a;
+    --gunmetalblue: #4a7aa1;
+    --darkgunmetalblue: #3a5d7a;
+}
+
+body {
+    margin-top: 57px;
+    background: var(--bg);
+    color: var(--fontcolor);
+    font-family: 'Courier';
+}
+
+li {
+    list-style: circle;
+}
+
+
+
+
+.navibar {
+    background-color: var(--navibg);
+    
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px 0 black;
+}
+.nav_list {
+    float: left;
+    list-style-type: none;
+}
+.nav_a {
+    display: block;
+    text-align: center;
+    padding: 11px 25px;
+    text-decoration: none;
+    color: var(--navifontcolor);
+    font-size: 20px;
+}
+.nav_a:hover {
+    background-color: var(--naviBtnColor);
+}
+.nav_ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+
+
+
+
+.light-theme {
+    --fontcolor: var(--black);
+    --bg: var(--aliceblue);
+    --navibg: var(--gunmetalblue);
+    --navifontcolor: var(--white);
+    --naviBtnColor: var(--darkgunmetalblue);
+    --btnBg: var(--deepocean);
+    --btnFontColor: var(--aliceblue);
+}
+
+.dark-theme {
+    --fontcolor: var(--white);
+    --bg: var(--deepocean);
+    --navibg: var(--gunmetalblue);
+    --navifontcolor: var(--white);
+    --naviBtnColor: var(--darkgunmetalblue);
+    --btnBg: var(--aliceblue);
+    --btnFontColor: var(--black)
+}
+
+.btn {
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    font-family: 'Courier';
+}
